@@ -1,0 +1,28 @@
+@import './_global';
+@import './_typography';
+@import './_container';
+@import './_placeholders';
+
+body {
+  background: #e5e5e5;
+}
+.create-ad-btn {
+  font-family: $main-font-family;
+  border: 0;
+  color: #ffffff;
+  font-size: 12px;
+  line-height: 1.67;
+  font-weight: 500;
+  text-transform: uppercase;
+  background: $accent-color;
+
+  padding: 29px;
+}
+.logo {
+  font-family: $secondary-font-family;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1.22;
+  letter-spacing: 0.02;
+  text-transform: uppercase;
+}

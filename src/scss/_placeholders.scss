@@ -1,0 +1,64 @@
+%list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+%centred-items {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* Размеры шрифтов под десктоп!
+Под остальные девайсы надо смотреть*/
+
+%navigation-item {
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+}
+
+%section-title {
+  font-family: $secondary-font-family;
+  font-size: 12px;
+  line-height: 1.25;
+  font-weight: 700;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+}
+
+%card-item-name {
+  font-size: 12px;
+  line-height: 1.67;
+  font-weight: 300;
+  letter-spacing: 0.07em;
+}
+
+%card-item-price {
+  font-size: 14px;
+  line-height: 1.42;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+}
+
+%item-name {
+  font-size: 18px;
+  line-height: 1.67;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+}
+
+%item-sub-text {
+  font-size: 12px;
+  line-height: 1.67;
+  font-weight: 300;
+  letter-spacing: 0.02em;
+}
+
+%item-description {
+  font-size: 14px;
+  line-height: 1.42;
+  font-weight: 300;
+  letter-spacing: 0.02em;
+}
