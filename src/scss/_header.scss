@@ -1,0 +1,53 @@
+header {
+  border-bottom: 1px solid red; //  #e2e3e5
+  .container {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    align-items: center;
+  }
+}
+.action-buttons {
+  display: flex;
+}
+
+.btn {
+  font-family: $main-font-family;
+  border: 1px transparent;
+  color: #000000;
+  font-size: 12px;
+  line-height: 1.67;
+  font-weight: 500;
+  text-transform: uppercase;
+  background-color: inherit;
+  padding: 29px 29px 27px 29px;
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    color: #ffffff;
+    background-color: $accent-color;
+  }
+
+  &.search {
+    padding: 26px;
+
+    &:hover,
+    &:focus {
+      fill: white;
+      border-radius: 50%;
+    }
+    svg {
+      display: block;
+    }
+  }
+}
+
+.logo {
+  font-family: $secondary-font-family;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1.22;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+}

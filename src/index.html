@@ -13,12 +13,16 @@
   <body>
     <header>
       <div class="container">
-        <button>search</button>
-        <!-- <img src="https://via.placeholder.com/56x22" alt="" /> -->
+        <button class="btn search">
+          <svg width="24px" height="24px">
+            <use href="./images/header-svg.svg#icon-search"></use>
+          </svg>
+        </button>
+        <!-- <img src="./images/Logo_opt.jpg" alt="site logo"> -->
         <p class="logo">LOGO</p>
-        <div>
-          <button class="register-Btn">Реєстрація / Увійти</button
-          ><button class="create-ad-btn">Створити оголошення</button>
+        <div class="action-buttons">
+          <button class="btn" data-action="register">Реєстрація / Увійти</button
+          ><button class="btn" data-action="create-ad">Створити оголошення</button>
         </div>
       </div>
     </header>
