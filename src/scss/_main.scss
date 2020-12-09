@@ -1,0 +1,45 @@
+.js-categories {
+  :first-child {
+    margin-top: 10px;
+  }
+  .categories-item {
+    @extend %list;
+    margin-bottom: 50px;
+    border-bottom: 1px solid red; //#E2E3E5
+  }
+  :last-child {
+    margin-bottom: 60px;
+    border-bottom: none;
+  }
+}
+
+.js-page-list {
+  display: flex;
+  align-items: center;
+  margin-bottom: 60px;
+  .js-page-number {
+    @extend %list;
+
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.42;
+    text-align: center;
+    letter-spacing: 0.02em;
+
+    background-color: #ffffff;
+    padding: 23px;
+    margin-right: 1px;
+
+    &:hover,
+    :focus {
+      color: #ffffff;
+      background-color: #000000;
+      cursor: pointer;
+    }
+
+    &.active {
+      color: #ffffff;
+      background-color: #000000;
+    }
+  }
+}

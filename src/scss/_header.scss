@@ -1,12 +1,35 @@
 header {
   border-bottom: 1px solid red; //  #e2e3e5
   .container {
+  }
+  .upper-menu {
+    @media screen and (max-width: 768px) {
+      display: none;
+    }
     display: flex;
     justify-content: space-between;
-    text-align: center;
     align-items: center;
   }
 }
+
+.navigation-menu {
+  display: flex;
+  border-top: 1px solid red; //  #e2e3e5
+  border-right: 1px solid red;
+
+  width: 100%;
+
+  .js-nav-menu {
+    @extend %centred-items;
+    margin: 0;
+    padding: 27px 0;
+
+    .js-nav-menu-item {
+      @extend %navigation-item;
+    }
+  }
+}
+
 .action-buttons {
   display: flex;
 }
@@ -18,6 +41,7 @@ header {
   font-size: 12px;
   line-height: 1.67;
   font-weight: 500;
+  letter-spacing: 0.02em;
   text-transform: uppercase;
   background-color: inherit;
   padding: 29px 29px 27px 29px;
@@ -29,6 +53,28 @@ header {
     background-color: $accent-color;
   }
 
+  &.reset {
+    display: flex;
+    align-items: center;
+    // justify-content: space-between;
+
+    font-family: $secondary-font-family;
+    color: #000000;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.25;
+    letter-spacing: 0.03em;
+
+    width: 214px;
+    padding: 22px 22px 22px 39px;
+    margin-left: auto;
+
+    svg {
+      margin-right: 11px;
+    }
+  }
+
   &.search {
     padding: 26px;
 
@@ -37,17 +83,17 @@ header {
       fill: white;
       border-radius: 50%;
     }
-    svg {
-      display: block;
-    }
   }
 }
 
 .logo {
   font-family: $secondary-font-family;
+  color: $main-text-color;
   font-size: 18px;
   font-weight: 700;
   line-height: 1.22;
   letter-spacing: 0.02em;
   text-transform: uppercase;
+
+  margin-left: 225px;
 }
