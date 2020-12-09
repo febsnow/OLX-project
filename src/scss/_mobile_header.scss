@@ -1,0 +1,48 @@
+.mobile-header {
+  @media screen and (min-width: $tablet-min) {
+    display: none;
+  }
+}
+.mobile-upper-menu {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.mobile-inner-menu-button {
+  position: absolute;
+  right: 25px;
+  top: 25px;
+
+  background-color: inherit;
+  padding: 0;
+  border: none;
+  //   border-right: 1px solid red; //#E2E3E5
+
+  &:hover,
+  &:focus {
+    background-color: $accent-color;
+  }
+}
+
+.mobile-navigation-menu {
+  .btn[data-action='mobile-register'] {
+    text-align: left;
+    padding: 25px 24px 25px 34px;
+    border: none;
+    width: 100%;
+  }
+}
+.mobile-js-nav-menu {
+  margin-top: 70px;
+  border-top: 1px solid red;
+  :first-child {
+    border-bottom: 1px solid red;
+  }
+  .mobile-js-nav-menu-item {
+    @extend %list;
+    @extend %navigation-item;
+
+    padding: 27px 24px 27px 34px;
+    border-bottom: 1px solid red;
+  }
+}

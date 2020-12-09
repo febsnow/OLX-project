@@ -1,11 +1,7 @@
 header {
   border-bottom: 1px solid red; //  #e2e3e5
-  .container {
-  }
+
   .upper-menu {
-    @media screen and (max-width: 768px) {
-      display: none;
-    }
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -87,6 +83,11 @@ header {
 }
 
 .logo {
+  @media screen and (max-width: $mobile-max) {
+    font-size: 16px;
+    line-height: 1.25;
+  }
+
   font-family: $secondary-font-family;
   color: $main-text-color;
   font-size: 18px;
@@ -95,5 +96,11 @@ header {
   letter-spacing: 0.02em;
   text-transform: uppercase;
 
-  margin-left: 225px;
+  // margin-left: 225px;
+}
+.desktop-menu {
+  display: none;
+  @media screen and (min-width: $tablet-min) {
+    display: block;
+  }
 }

@@ -13,68 +13,83 @@
   <body>
     <header>
       <div class="container">
-        <div class="upper-menu">
-          <button class="btn search">
-            <svg width="24px" height="24px">
-              <use href="./images/header_svg.svg#icon-search"></use>
-            </svg>
-          </button>
-          <!-- <img src="./images/Logo_opt.jpg" alt="site logo"> -->
-          <a href="./index.html" class="logo">LOGO</a>
-          <div class="action-buttons">
-            <button class="btn" data-action="register">Реєстрація / Увійти</button
-            ><button class="btn" data-action="create-ad">Створити оголошення!</button>
-          </div>
-        </div>
-        <button type="button" class="menu-button" aria-expanded="false" aria-controls="menu-container" data-menu-button>
-          <svg class="menu-icon" width="20px" height="20px" aria-label="Переключатель мобильного меню">
-            <use class="menu-open" href="./images/header_svg.svg#icon-menu"></use>
-            <use class="menu-close" href="./images/header_svg.svg#icon-close"></use>
-          </svg>
-        </button>
-        <div class="menu" id="menu-container" data-menu>
-          <nav class="navigation-menu">
-            <ul class="js-nav-menu"></ul>
-            <button class="btn reset">
-              <svg width="24" height="24"><use href="./images/header_svg.svg#icon-reset"></use></svg>Очистити фільтри
-            </button>
-          </nav>
-        </div>
         <div class="mobile-header">
           <div class="mobile-upper-menu">
             <button
               type="button"
-              class="menu-button"
+              class="mobile-menu-button"
               aria-expanded="false"
               aria-controls="menu-container"
               data-menu-button
             >
               <svg class="menu-icon" width="20px" height="20px" aria-label="Переключатель мобильного меню">
-                <use class="menu-open" href="./images/header_svg.svg#icon-menu"></use>
-                <use class="menu-close" href="./images/header_svg.svg#icon-close"></use>
+                <use class="menu-open" href="./images/sprite_svg.svg#icon-menu"></use>
+                <use class="menu-close" href="./images/sprite_svg.svg#icon-close"></use>
               </svg>
-              <a href="./index.html" class="logo">LOGO</a>
             </button>
-            <button class="btn search">
+            <a href="./index.html" class="logo">LOGO</a>
+            <button class="btn search" data-modal-search-mobile>
               <svg width="24px" height="24px">
-                <use href="./images/header_svg.svg#icon-search"></use>
+                <use href="./images/sprite_svg.svg#icon-search"></use>
               </svg>
             </button>
-            <div class="action-buttons">
-              <button class="btn" data-action="register">Реєстрація / Увійти</button
-              ><button class="btn" data-action="create-ad">Створити оголошення!</button>
-            </div>
           </div>
 
-          <div class="menu" id="menu-container" data-menu>
-            <nav class="navigation-menu">
-              <ul class="js-nav-menu"></ul>
-              <button class="btn reset">
-                <svg width="24" height="24"><use href="./images/header_svg.svg#icon-reset"></use></svg>Очистити фільтри
-              </button>
-            </nav>
+          <div class="mobile-menu" id="menu-container" data-menu-mobile>
+            
+              <nav class="mobile-navigation-menu">
+                <button
+                type="button"
+                class="mobile-inner-menu-button"
+                data-menu-inner-button
+            >
+              <svg class="menu-icon" width="24px" height="24px">
+                   <use class="menu-close" href="./images/sprite_svg.svg#icon-close"></use>
+              </svg>
+            </button>
+            <ul class="mobile-js-nav-menu">
+              <li>
+
+                <button class="btn" data-action="mobile-register">Реєстрація / Увійти</button
+                  >
+                </li>
+                <li class="mobile-js-nav-menu-item">item1</li>
+                <li class="mobile-js-nav-menu-item">item2</li>
+                <li class="mobile-js-nav-menu-item">item3</li>
+              </ul>
+              </nav>
+            </div>
+            
+        </div>
+        <div class="desktop-menu">
+
+          <div class="upper-menu">
+            <button class="btn search" data-modal-search>
+              <svg width="24px" height="24px">
+                <use href="./images/sprite_svg.svg#icon-search"></use>
+              </svg>
+          </button>
+          <a href="./index.html" class="logo">LOGO</a>
+          <div class="action-buttons">
+            <button class="btn" data-action="register" data-modal-login>Реєстрація / Увійти</button
+              ><button class="btn" data-action="create-ad" data-modal-create>Створити оголошення!</button>
           </div>
         </div>
+        <div class="menu" id="menu-container" data-menu-tablet>
+          <nav class="navigation-menu">
+            <button type="button" class="menu-button" aria-expanded="false" aria-controls="menu-container" data-menu-button>
+              <svg class="menu-icon" width="20px" height="20px" aria-label="Переключатель мобильного меню">
+                <use class="menu-open" href="./images/sprite_svg.svg#icon-menu"></use>
+                <use class="menu-close" href="./images/sprite_svg.svg#icon-close"></use>
+              </svg>
+            </button>
+            <ul class="js-nav-menu"></ul>
+            <button class="btn reset">
+              <svg width="24" height="24"><use href="./images/sprite_svg.svg#icon-reset"></use></svg>Очистити фільтри
+            </button>
+          </nav>
+        </div>
+      </div>
       </div>
     </header>
     <main>
@@ -86,17 +101,18 @@
           <li class="categories-item">category</li>
         </ul>
         <ul class="js-page-list">
-          <li class="js-page-number active">1</li>
-          <li class="js-page-number">2</li>
-          <li class="js-page-number">3</li>
+          <li><button class="js-page-number active">1</button></li>
+          <li><button class="js-page-number">2</button></li>
+          <li><button class="js-page-number">3</button></li>
         </ul>
+        <button class="mobile-create-ad-btn" data-modal-create-mobile><svg width="50px" height="50px"><use href="./images/sprite_svg.svg#icon-add"></svg></button>
       </div>
     </main>
     <footer>
       <div class="container">
         <p class="copy">
           &copy 2019 <span class="devider">|</span> All Rights Reserved <span class="devider">|</span> Developed with
-          <svg width="16" height="16"><use href="./images/header_svg.svg#icon-favorite-heart"></use></svg> by GoIT
+          <svg width="16" height="16"><use href="./images/sprite_svg.svg#icon-favorite-heart"></use></svg> by GoIT
           Students
         </p>
       </div>
@@ -105,7 +121,7 @@
       <div class="js-modal">
         <button class="button-close" data-modal-close>
           <svg class="icon-close" width="24" height="24">
-            <use href="./images/header_svg.svg#icon-close"></use>
+            <use href="./images/sprite_svg.svg#icon-close"></use>
           </svg>
         </button>
         <p>

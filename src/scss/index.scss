@@ -1,15 +1,18 @@
 @import './global';
+@import './breakpoints';
 @import './typography';
 @import './placeholders';
 @import './container';
 @import './backdrop';
 @import './modal';
 @import './header';
+@import './mobile_header';
 @import './menu';
-@import './main';
+@import './main_section';
 @import './footer';
 
 body {
   background: #e5e5e5;
   margin: 0;
+  padding: 0;
 }
